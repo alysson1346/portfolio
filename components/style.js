@@ -43,3 +43,20 @@ export const TextBanner = styled.p`
     font-size: 15px;
   }
 `;
+
+export const TitlesBlack = styled.h2`
+  font-weight: 600px;
+  font-size: 35px;
+  border-bottom: 3.5px solid #b0009f;
+  width: fit-content;
+`;
+
+export const NormalText = styled.p`
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+
+  color: #000000;
+`;
