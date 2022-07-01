@@ -74,3 +74,16 @@ export const TextSkills = styled.p`
   font-size: 30px;
   font-family: "Poppins";
 `;
+
+export const TextFooterTitle = styled.h3`
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0px;
+  padding-bottom: 5px;
+`;
+
+export const TextFooter = styled.a`
+  font-size: 15px;
+  color: #fff;
+`;
