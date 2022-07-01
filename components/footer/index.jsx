@@ -1,5 +1,6 @@
-import { Grid, Box, Link } from "@mui/material";
 import * as React from "react";
+import { Grid, Box, Link } from "@mui/material";
+
 import { TextFooterTitle, TextFooter } from "../style";
 import EmailIcon from "@material-ui/icons/Email";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
