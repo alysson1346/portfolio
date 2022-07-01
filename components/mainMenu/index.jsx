@@ -12,8 +12,9 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import DvrIcon from "@mui/icons-material/Dvr";
 import BarChartIcon from "@mui/icons-material/BarChart";
 import CloseIcon from "@mui/icons-material/Close";
-import Link from "@mui/material/Link";
+
 import Logo from "../../public/img/logo.svg";
+import { Link } from "@mui/material";
 
 import theme from "../../src/theme";
 
@@ -153,17 +154,22 @@ function MainMenu() {
               pr={["10px", "20px", "60px", "60px", "60px"]}
             >
               <Hidden only={["xs"]}>
-                <Button
-                  sx={{
-                    color: "#fff",
-                    backgroundColor: "#B0009F",
-                    width: "100px",
-                    height: "35px",
-                    borderRadius: "20px",
-                  }}
+                <Link
+                  sx={{ textDecoration: "none" }}
+                  href="malito:alyssoncolombo@outlook.com"
                 >
-                  Contato
-                </Button>
+                  <Button
+                    sx={{
+                      color: "#fff",
+                      backgroundColor: "#B0009F",
+                      width: "100px",
+                      height: "35px",
+                      borderRadius: "20px",
+                    }}
+                  >
+                    Contato
+                  </Button>
+                </Link>
               </Hidden>
             </Grid>
           </Grid>

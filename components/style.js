@@ -49,6 +49,7 @@ export const TitlesBlack = styled.h2`
   font-size: 35px;
   border-bottom: 3.5px solid #b0009f;
   width: fit-content;
+  margin: 0px;
 `;
 
 export const TitlesWhite = styled.h2`
