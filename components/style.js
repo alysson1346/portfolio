@@ -51,6 +51,14 @@ export const TitlesBlack = styled.h2`
   width: fit-content;
 `;
 
+export const TitlesWhite = styled.h2`
+  color: #fff;
+  font-weight: 600px;
+  font-size: 35px;
+  border-bottom: 3.5px solid #fff;
+  width: fit-content;
+`;
+
 export const NormalText = styled.p`
   font-family: "Poppins";
   font-style: normal;
@@ -59,4 +67,10 @@ export const NormalText = styled.p`
   line-height: 36px;
 
   color: #000000;
+`;
+
+export const TextSkills = styled.p`
+  color: #fff;
+  font-size: 30px;
+  font-family: "Poppins";
 `;
