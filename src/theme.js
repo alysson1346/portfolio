@@ -1,17 +1,36 @@
 import { createTheme } from "@mui/material/styles";
-import { red } from "@mui/material/colors";
+const defaultTheme = createTheme();
 
-// Create a theme instance.
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#556cd6",
+      // Purple and green play nicely together.
+      main: "#00B0B0",
     },
     secondary: {
-      main: "#19857b",
+      // This is green.A700 as hex.
+      main: "#B0009F",
     },
-    error: {
-      main: red.A400,
+    terciary: {
+      main: "#2E7373",
+    },
+
+    mainMenu: {
+      main: "#2E7373",
+    },
+  },
+  components: {
+    MuiButton: {
+      variants: [
+        {
+          props: { variant: "dashed" },
+          style: {
+            textTransform: "none",
+            border: `2px dashed ${defaultTheme.palette.primary.main}`,
+            color: defaultTheme.palette.primary.main,
+          },
+        },
+      ],
     },
   },
 });
