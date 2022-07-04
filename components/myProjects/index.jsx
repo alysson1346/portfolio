@@ -10,6 +10,7 @@ import Image from "next/image";
 const MyProjects = () => {
   return (
     <Box
+      id="MyProjects"
       pl={["10px", "20px", "60px", "60px", "60px"]}
       pr={["10px", "20px", "60px", "60px", "60px"]}
       sx={{
@@ -104,7 +105,7 @@ const MyProjects = () => {
           <Grid container gap={"15px"} sx={{ paddingTop: "10px" }}>
             <Link
               sx={{ textDecoration: "none" }}
-              href="https://react-entrega-s3-kenzishop-com-context-api-alysson1346.vercel.app/"
+              href="https://react-entrega-s3-kenzieshop-alysson1346.vercel.app/"
             >
               <Button
                 sx={{
@@ -119,7 +120,7 @@ const MyProjects = () => {
             </Link>
             <Link
               sx={{ textDecoration: "none" }}
-              href="https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s3-kenzishop-com-context-api-alysson1346"
+              href="https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s3-kenzieshop-alysson1346"
             >
               <Button
                 sx={{

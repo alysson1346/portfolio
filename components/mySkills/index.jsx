@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Grid } from "@mui/material";
 import Image from "next/image";
-import { TextSkills, TitlesWhite } from "../style";
+import { TextSkills, TitlesWhite, BarPercentage } from "../style";
 
 import Html from "../../public/img/skills/html.svg";
 import Css from "../../public/img/skills/css.svg";
@@ -16,7 +16,8 @@ import Typescript from "../../public/img/skills/html.svg";
 const MySkills = () => {
   return (
     <Grid
-      sx={{ backgroundColor: "#038080" }}
+      id="MySkills"
+      sx={{ backgroundColor: "#0a8f8f" }}
       pt={"20px"}
       pb={"50px"}
       pl={["10px", "20px", "60px", "60px", "60px"]}
@@ -31,6 +32,11 @@ const MySkills = () => {
         flexDirection={"row"}
         gap={["15px", "20px", "10px", "20px", "20px"]}
         justifyContent="space-between"
+        height={["320px", "auto", "auto", "auto", "auto"]}
+        sx={{
+          overflowY: ["scroll", "scroll", "hidden", "hidden", "hidden"],
+          msOverflowStyle: "none",
+        }}
       >
         <Grid
           container
@@ -39,14 +45,17 @@ const MySkills = () => {
           alignItems={"center"}
           gap="10px"
           sx={{
-            backgroundColor: "#009D9D",
+            backgroundColor: "#06a1a1",
             width: ["100%", "48%", "32%", "32%", "32%"],
             borderRadius: "20px",
             padding: "10px",
           }}
         >
           <Image width={"80px"} src={Html} />
-          <TextSkills>Frontend - Html</TextSkills>
+          <Grid container flexDirection={"column"}>
+            <TextSkills>Html</TextSkills>
+            <BarPercentage value="75" max="100" />
+          </Grid>
         </Grid>
 
         <Grid
@@ -56,14 +65,17 @@ const MySkills = () => {
           alignItems={"center"}
           gap="10px"
           sx={{
-            backgroundColor: "#009D9D",
+            backgroundColor: "#06a1a1",
             width: ["100%", "48%", "32%", "32%", "32%"],
             borderRadius: "20px",
             padding: "10px",
           }}
         >
           <Image width={"80px"} src={Css} />
-          <TextSkills>Frontend - Css</TextSkills>
+          <Grid container flexDirection={"column"}>
+            <TextSkills>Css</TextSkills>
+            <BarPercentage value="70" max="100" />
+          </Grid>
         </Grid>
 
         <Grid
@@ -73,14 +85,17 @@ const MySkills = () => {
           alignItems={"center"}
           gap="10px"
           sx={{
-            backgroundColor: "#009D9D",
+            backgroundColor: "#06a1a1",
             width: ["100%", "48%", "32%", "32%", "32%"],
             borderRadius: "20px",
             padding: "10px",
           }}
         >
           <Image width={"80px"} src={Js} />
-          <TextSkills>Frontend - Js</TextSkills>
+          <Grid container flexDirection={"column"}>
+            <TextSkills>Js</TextSkills>
+            <BarPercentage value="60" max="100" />
+          </Grid>
         </Grid>
 
         <Grid
@@ -90,14 +105,17 @@ const MySkills = () => {
           alignItems={"center"}
           gap="10px"
           sx={{
-            backgroundColor: "#009D9D",
+            backgroundColor: "#06a1a1",
             width: ["100%", "48%", "32%", "32%", "32%"],
             borderRadius: "20px",
             padding: "10px",
           }}
         >
           <Image width={"80px"} src={ReactLogo} />
-          <TextSkills>Frontend - React</TextSkills>
+          <Grid container flexDirection={"column"}>
+            <TextSkills>React</TextSkills>
+            <BarPercentage value="80" max="100" />
+          </Grid>
         </Grid>
 
         <Grid
@@ -107,14 +125,17 @@ const MySkills = () => {
           alignItems={"center"}
           gap="10px"
           sx={{
-            backgroundColor: "#009D9D",
+            backgroundColor: "#06a1a1",
             width: ["100%", "48%", "32%", "32%", "32%"],
             borderRadius: "20px",
             padding: "10px",
           }}
         >
           <Image width={"80px"} src={Nodejs} />
-          <TextSkills>Backend - Nodejs</TextSkills>
+          <Grid container flexDirection={"column"}>
+            <TextSkills>Nodejs</TextSkills>
+            <BarPercentage value="60" max="100" />
+          </Grid>
         </Grid>
 
         <Grid
@@ -124,14 +145,17 @@ const MySkills = () => {
           alignItems={"center"}
           gap="10px"
           sx={{
-            backgroundColor: "#009D9D",
+            backgroundColor: "#06a1a1",
             width: ["100%", "48%", "32%", "32%", "32%"],
             borderRadius: "20px",
             padding: "10px",
           }}
         >
           <Image width={"80px"} src={Typescript} />
-          <TextSkills>Backend - Typescript</TextSkills>
+          <Grid container flexDirection={"column"}>
+            <TextSkills>Typescript</TextSkills>
+            <BarPercentage value="50" max="100" />
+          </Grid>
         </Grid>
 
         <Grid
@@ -141,14 +165,17 @@ const MySkills = () => {
           alignItems={"center"}
           gap="10px"
           sx={{
-            backgroundColor: "#009D9D",
+            backgroundColor: "#06a1a1",
             width: ["100%", "48%", "32%", "32%", "32%"],
             borderRadius: "20px",
             padding: "10px",
           }}
         >
           <Image width={"80px"} src={Python} />
-          <TextSkills>Backend - Python</TextSkills>
+          <Grid container flexDirection={"column"}>
+            <TextSkills>Python</TextSkills>
+            <BarPercentage value="65" max="100" />
+          </Grid>
         </Grid>
 
         <Grid
@@ -158,14 +185,17 @@ const MySkills = () => {
           alignItems={"center"}
           gap="10px"
           sx={{
-            backgroundColor: "#009D9D",
+            backgroundColor: "#06a1a1",
             width: ["100%", "48%", "32%", "32%", "32%"],
             borderRadius: "20px",
             padding: "10px",
           }}
         >
           <Image width={"80px"} src={Postgre} />
-          <TextSkills>B.D - Postgresql</TextSkills>
+          <Grid container flexDirection={"column"}>
+            <TextSkills>Postgresql</TextSkills>
+            <BarPercentage value="70" max="100" />
+          </Grid>
         </Grid>
 
         <Grid
@@ -175,14 +205,17 @@ const MySkills = () => {
           alignItems={"center"}
           gap="10px"
           sx={{
-            backgroundColor: "#009D9D",
+            backgroundColor: "#06a1a1",
             width: ["100%", "48%", "32%", "32%", "32%"],
             borderRadius: "20px",
             padding: "10px",
           }}
         >
           <Image width={"80px"} src={MongoDb} />
-          <TextSkills>B.D - MongoDb</TextSkills>
+          <Grid container flexDirection={"column"}>
+            <TextSkills>MongoDb</TextSkills>
+            <BarPercentage value="60" max="100" />
+          </Grid>
         </Grid>
       </Grid>
     </Grid>

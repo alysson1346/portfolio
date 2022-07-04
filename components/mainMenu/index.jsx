@@ -12,7 +12,8 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import DvrIcon from "@mui/icons-material/Dvr";
 import BarChartIcon from "@mui/icons-material/BarChart";
 import CloseIcon from "@mui/icons-material/Close";
-
+import Fab from "@mui/material/Fab";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import Logo from "../../public/img/logo.svg";
 import { Link } from "@mui/material";
 
@@ -65,20 +66,60 @@ function MainMenu() {
           <CloseIcon onClick={() => setState(false)} />
         </Grid>
         <Divider />
-        <Grid container alignItems="center" gap="5px" pl="10px">
+        <Grid
+          container
+          alignItems="center"
+          gap="5px"
+          pl="10px"
+          pt="10px"
+          pb="10px"
+        >
           <HomeIcon />
-          <p>Home</p>
+          <Link sx={{ color: "#fff", textDecoration: "none" }} href="#Home">
+            Home
+          </Link>
         </Grid>
-        <Grid container alignItems="center" gap="5px" pl="10px">
+        <Grid
+          container
+          alignItems="center"
+          gap="5px"
+          pl="10px"
+          pt="10px"
+          pb="10px"
+        >
           <AccountCircleIcon />
-          <p>Sobre mim</p>
+          <Link sx={{ color: "#fff", textDecoration: "none" }} href="#AboutMe">
+            Sobre mim
+          </Link>
         </Grid>
-        <Grid container alignItems="center" gap="5px" pl="10px">
-          <BarChartIcon /> <p>Minhas Habilidades</p>
+        <Grid
+          container
+          alignItems="center"
+          gap="5px"
+          pl="10px"
+          pt="10px"
+          pb="10px"
+        >
+          <BarChartIcon />{" "}
+          <Link sx={{ color: "#fff", textDecoration: "none" }} href="#MySkills">
+            Minhas Habilidades
+          </Link>
         </Grid>
-        <Grid container alignItems="center" gap="5px" pl="10px">
+        <Grid
+          container
+          alignItems="center"
+          gap="5px"
+          pl="10px"
+          pt="10px"
+          pb="10px"
+        >
           <DvrIcon />
-          <p>Meus Projetos</p>
+          <Link
+            sx={{ color: "#fff", textDecoration: "none" }}
+            href="#MyProjects"
+          >
+            Meus Projetos
+          </Link>
         </Grid>
       </List>
     </Box>
@@ -87,7 +128,41 @@ function MainMenu() {
   return (
     <ThemeProvider theme={theme}>
       <div>
-        <Box sx={{ backgroundColor: "#F2F2F2" }}>
+        <Box
+          sx={{
+            backgroundColor: "#F2F2F2",
+            position: ["fixed", "fixed", "fixed", "static", "static"],
+            top: "0",
+            left: "0",
+            width: "100%",
+            zIndex: "1",
+            height: "80px",
+          }}
+        >
+          <Grid
+            container
+            justifyContent={"flex-end"}
+            sx={{
+              "& > :not(style)": { m: 1 },
+              width: "100%",
+              position: "fixed",
+              bottom: "0",
+              margin: "0 auto",
+            }}
+          >
+            <Fab
+              onClick={(e) => {
+                e.preventDefault();
+                return window.scrollTo(0, 0);
+              }}
+              size="small"
+              color="secondary"
+              aria-label="add"
+            >
+              <ArrowUpwardIcon />
+            </Fab>
+          </Grid>
+
           <Grid
             container
             flexDirection="row"
@@ -136,10 +211,18 @@ function MainMenu() {
               sx={{ paddingLeft: "24px" }}
             >
               <Hidden only={["xs", "sm", "md"]}>
-                <Link sx={mainMenu}>Home</Link>
-                <Link sx={mainMenu}>Sobre mim</Link>
-                <Link sx={mainMenu}>Minhas Habilidades</Link>
-                <Link sx={mainMenu}>Meus Projetos</Link>
+                <Link sx={mainMenu} href="#Home">
+                  Home
+                </Link>
+                <Link sx={mainMenu} href="#AboutMe">
+                  Sobre mim
+                </Link>
+                <Link sx={mainMenu} href="#MySkills">
+                  Minhas Habilidades
+                </Link>
+                <Link sx={mainMenu} href="#MyProjects">
+                  Meus Projetos
+                </Link>
               </Hidden>
               <Hidden only={["lg", "xl"]}>
                 <Image width="200px" src={Logo} />
