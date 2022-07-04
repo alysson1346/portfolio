@@ -125,7 +125,7 @@ export const ImageSkills = styled.img`
 `;
 
 export const BarPercentage = styled.progress`
-  accent-color: #06a1a1;
+  accent-color: #fff;
 `;
 
 export const TextFooterTitle = styled.h3`
