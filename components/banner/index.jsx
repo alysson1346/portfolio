@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { Box, Button, Grid } from "@mui/material";
+import { Box, Button, Grid, Link } from "@mui/material";
 import Image from "next/image";
 
 import Hidden from "@material-ui/core/Hidden";
@@ -10,6 +10,8 @@ import { TitleBanner, TextBanner } from "../style";
 export default function Banner() {
   return (
     <Box
+      id="Home"
+      mt={["80px", "80px", "80px", "0", "0"]}
       pt="25px"
       sx={{
         backgroundColor: "#F2F2F2",
@@ -28,24 +30,29 @@ export default function Banner() {
           </TextBanner>
           <Hidden only={["xs", "sm"]}>
             <Grid container flexDirection={"row"} gap={"24px"}>
-              <Button
-                sx={{
-                  backgroundColor: "#B0009F",
-                  color: "#FFF",
-                  borderRadius: "20px",
-                }}
-              >
-                Ver Habilidades
-              </Button>
-              <Button
-                sx={{
-                  backgroundColor: "#00B0B0",
-                  color: "#FFF",
-                  borderRadius: "20px",
-                }}
-              >
-                Ver Projetos
-              </Button>
+              <Link sx={{ textDecoration: "none" }} href="#MySkills">
+                <Button
+                  sx={{
+                    backgroundColor: "#B0009F",
+                    color: "#FFF",
+                    borderRadius: "20px",
+                  }}
+                >
+                  Ver Habilidades
+                </Button>
+              </Link>
+
+              <Link sx={{ textDecoration: "none" }} href="#MyProjects">
+                <Button
+                  sx={{
+                    backgroundColor: "#00B0B0",
+                    color: "#FFF",
+                    borderRadius: "20px",
+                  }}
+                >
+                  Ver Projetos
+                </Button>
+              </Link>
             </Grid>
           </Hidden>
         </Grid>

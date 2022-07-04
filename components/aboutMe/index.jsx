@@ -8,6 +8,7 @@ import Image from "next/image";
 const AboutMe = () => {
   return (
     <Grid
+      id="AboutMe"
       pt="30px"
       pb="40px"
       pl={["10px", "20px", "60px", "60px", "60px"]}
@@ -26,12 +27,9 @@ const AboutMe = () => {
           Como amante da tecnologia resolvi estudar programação para sempre
           estar por dentro das últimas novidades desse mercado que vem crescendo
           a cada dia que se passa. Tenho experiência em programação numa startup
-          que desenvolvi com um amigo onde desenvolvi muito bem a base da
-          programação juntamente com sua lógica. Por motivos pessoais não dei
-          segmento no projeto da startup. Porém o desejo e amor pela programação
-          continuou e resolvi voltar a estudar programação para novamente me
-          adequar ao mercado de trabalho sempre buscando aprender as melhores
-          tecnologias do mercado!
+          que criei com um amigo onde desenvolvi muito bem a base da programação
+          juntamente com sua lógica. Atualmemte continuo estudando para sempre
+          atender as necessidades do mercado!
         </NormalText>
       </Grid>
       <Grid
