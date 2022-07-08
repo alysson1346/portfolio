@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Grid } from "@mui/material";
 import Image from "next/image";
-import { TextSkills, TitlesWhite, BarPercentage } from "../style";
+import { TextSkills, TitlesWhite, BarPercentage, Studying } from "../style";
 
 import Html from "../../public/img/skills/html.svg";
 import Css from "../../public/img/skills/css.svg";
@@ -11,7 +11,7 @@ import Nodejs from "../../public/img/skills/nodejs.svg";
 import Postgre from "../../public/img/skills/postgre.svg";
 import Python from "../../public/img/skills/python.svg";
 import ReactLogo from "../../public/img/skills/react.svg";
-import Typescript from "../../public/img/skills/html.svg";
+import Typescript from "../../public/img/skills/typescript.svg";
 
 const MySkills = () => {
   return (
@@ -171,26 +171,6 @@ const MySkills = () => {
             padding: "10px",
           }}
         >
-          <Image width={"80px"} src={Python} />
-          <Grid container flexDirection={"column"}>
-            <TextSkills>Python</TextSkills>
-            <BarPercentage value="65" max="100" />
-          </Grid>
-        </Grid>
-
-        <Grid
-          container
-          flexDirection={"row"}
-          flexWrap={"nowrap"}
-          alignItems={"center"}
-          gap="10px"
-          sx={{
-            backgroundColor: "#06a1a1",
-            width: ["100%", "48%", "32%", "32%", "32%"],
-            borderRadius: "20px",
-            padding: "10px",
-          }}
-        >
           <Image width={"80px"} src={Postgre} />
           <Grid container flexDirection={"column"}>
             <TextSkills>Postgresql</TextSkills>
@@ -211,10 +191,30 @@ const MySkills = () => {
             padding: "10px",
           }}
         >
+          <Image width={"80px"} src={Python} />
+          <Grid container flexDirection={"column"}>
+            <TextSkills>Python</TextSkills>
+            <Studying>Estudando....</Studying>
+          </Grid>
+        </Grid>
+
+        <Grid
+          container
+          flexDirection={"row"}
+          flexWrap={"nowrap"}
+          alignItems={"center"}
+          gap="10px"
+          sx={{
+            backgroundColor: "#06a1a1",
+            width: ["100%", "48%", "32%", "32%", "32%"],
+            borderRadius: "20px",
+            padding: "10px",
+          }}
+        >
           <Image width={"80px"} src={MongoDb} />
           <Grid container flexDirection={"column"}>
             <TextSkills>MongoDb</TextSkills>
-            <BarPercentage value="60" max="100" />
+            <Studying>Estudando....</Studying>
           </Grid>
         </Grid>
       </Grid>

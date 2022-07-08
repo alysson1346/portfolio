@@ -37,7 +37,7 @@ const Footer = () => {
               Linkedin
             </Link>
           </Grid>
-          <Grid
+          {/* <Grid
             container
             flexDirection={"row"}
             gap="2px"
@@ -46,13 +46,8 @@ const Footer = () => {
             <Link sx={{ color: "#FFF" }} href="alyssoncolombo@outlook.com">
               <EmailIcon />
             </Link>
-            <Link
-              href="malito:alyssoncolombo@outlook.com"
-              sx={{ color: "#FFF", textDecoration: "none" }}
-            >
-              E-mail
-            </Link>
-          </Grid>
+            <Link sx={{ color: "#FFF", textDecoration: "none" }}>E-mail</Link>
+          </Grid> */}
         </Box>
         <Box>
           <TextFooterTitle>Conheça meu repositório:</TextFooterTitle>

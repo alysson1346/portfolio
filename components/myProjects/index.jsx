@@ -1,9 +1,10 @@
 import { Grid, Box, Button, Link } from "@mui/material";
 import * as React from "react";
-import { TitlesBlack } from "../style";
+import { NameProjects, TitlesBlack } from "../style";
 import project1 from "../../public/img/myProjects/horaRango.jpg";
 import project2 from "../../public/img/myProjects/kenziehub.jpg";
 import project3 from "../../public/img/myProjects/kenzieshop.jpg";
+import project4 from "../../public/img/myProjects/nodeCapa.jpg";
 
 import Image from "next/image";
 
@@ -30,6 +31,9 @@ const MyProjects = () => {
       >
         <Box width={["100%", "48%", "32%", "32%", "32%"]}>
           <Image src={project1} />
+
+          <NameProjects>Hora do Rango</NameProjects>
+
           <Grid container gap={"15px"} sx={{ paddingTop: "10px" }}>
             <Link
               sx={{ textDecoration: "none", color: "#FFF" }}
@@ -66,6 +70,9 @@ const MyProjects = () => {
 
         <Box width={["100%", "48%", "32%", "32%", "32%"]}>
           <Image src={project2} />
+
+          <NameProjects>Kenziehub</NameProjects>
+
           <Grid container gap={"15px"} sx={{ paddingTop: "10px" }}>
             <Link
               sx={{ textDecoration: "none" }}
@@ -102,6 +109,9 @@ const MyProjects = () => {
 
         <Box width={["100%", "48%", "32%", "32%", "32%"]}>
           <Image src={project3} />
+
+          <NameProjects>Kenzie Shop</NameProjects>
+
           <Grid container gap={"15px"} sx={{ paddingTop: "10px" }}>
             <Link
               sx={{ textDecoration: "none" }}
@@ -121,6 +131,30 @@ const MyProjects = () => {
             <Link
               sx={{ textDecoration: "none" }}
               href="https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s3-kenzieshop-alysson1346"
+            >
+              <Button
+                sx={{
+                  backgroundColor: "#2B2B2B",
+                  color: "#FFF",
+                  borderRadius: "20px",
+                  fontSize: "12px ",
+                }}
+              >
+                Acessar Repositório
+              </Button>
+            </Link>
+          </Grid>
+        </Box>
+
+        <Box width={["100%", "48%", "32%", "32%", "32%"]}>
+          <Image src={project4} />
+
+          <NameProjects>Projeto em Node</NameProjects>
+
+          <Grid container gap={"15px"} sx={{ paddingTop: "10px" }}>
+            <Link
+              sx={{ textDecoration: "none" }}
+              href="https://github.com/Kenzie-Academy-Brasil-Developers/m4_sprint4-entrega-alysson1346"
             >
               <Button
                 sx={{
