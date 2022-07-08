@@ -229,7 +229,7 @@ function MainMenu() {
               </Hidden>
             </Grid>
 
-            <Grid
+            {/*             <Grid
               item
               xs={4}
               container
@@ -254,7 +254,7 @@ function MainMenu() {
                   </Button>
                 </Link>
               </Hidden>
-            </Grid>
+            </Grid> */}
           </Grid>
         </Box>
 

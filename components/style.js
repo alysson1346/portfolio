@@ -128,6 +128,21 @@ export const BarPercentage = styled.progress`
   accent-color: #fff;
 `;
 
+export const Studying = styled.p`
+  color: #fff;
+  font-size: 15px;
+  font-family: "Poppins";
+  margin: 0px;
+`;
+
+export const NameProjects = styled.p`
+  color: #000;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Poppins";
+  margin: 0px;
+`;
+
 export const TextFooterTitle = styled.h3`
   font-family: "Poppins";
 
